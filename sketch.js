@@ -33,19 +33,12 @@ function preload(){
       }
     }
 
-    function myTimer() {
-      if (millis() > startT + deltaT) {
-        startT = millis()
-        console.log("it is time for it now"); // do what you have to do!
-        doit = true;
-        rb=0;                  // repeats second circle as loop
-      }
-    }
+   
 
     function draw(){
       background(80,80,80);
       for(i=0;i<500;i++){
-          myTimer();
+        
           raindropsArray[i].display();
           raindropsArray[i].fall();
          
